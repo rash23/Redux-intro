@@ -9,9 +9,7 @@ const Main = () => {
     const messages = useSelector(state => state.main.messages)
 
     const changeInputValueOne = ({target}) => {
-
         dispatch(setInputValueOne(target.value))
-
     }
 
     const changeInputValueTwo = ({target}) => {
