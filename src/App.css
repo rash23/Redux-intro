@@ -1,38 +1,110 @@
-.App {
-  text-align: center;
+* {
+    box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+    background-color: cadetblue;
+    color: aliceblue;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+p {
+    margin: 0;
+    padding: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.container{
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
-.App-link {
-  color: #61dafb;
+.field{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    white-space: pre-wrap;
+    background-color: burlywood;
+    width: 400px;
+    min-height: 400px;
+    padding: 10px;
+    border-radius: 6px;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.wrapper{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    margin-bottom: 50px;
+    align-items: center;
+}
+
+.text-areas-wrapper{
+    display: flex;
+    gap: 10px;
+}
+
+.text-area-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.text-area-wrapper p {
+    padding: 4px 0;
+    font-weight: bold;
+}
+
+.button{
+    border-radius: 6px;
+    cursor: pointer;
+    padding: 10px 20px;
+    background: teal;
+    color: azure;
+    width: 200px;
+    border: teal;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.button:hover{
+    opacity: 0.9;
+}
+textarea{
+    min-height: 100px;
+    border: 2px solid teal;
+    border-radius: 6px;
+    width: 100%;
+}
+
+textarea:focus{
+    outline: 2px solid teal;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+li{
+    padding: 10px;
+    background-color: teal;
+    border-radius: 6px;
+    max-width: 50%;
+    width: fit-content;
+    word-break: break-word;
+}
+
+.one{
+    background-color: chocolate;
+}
+
+.two{
+    background-color: teal;
+    align-self: end;
 }
